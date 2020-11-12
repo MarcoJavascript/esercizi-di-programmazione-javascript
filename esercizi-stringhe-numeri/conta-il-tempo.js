@@ -12,3 +12,20 @@
 
   http://www.imparareaprogrammare.it
 */
+var seconds = 32657;
+var hour = seconds/3600;
+var h = Math.floor(hour)
+var appoggio = hour - h;
+var minutes = appoggio*60;
+var m = Math.floor(minutes);
+if (m>59) {
+  h = h + 1
+  m = 0
+}
+var appoggio2 = minutes - m;
+var s = Math.round(appoggio2*60);
+if (s>59) {
+  m = m + 1
+  s = 0
+}
+console.log(`${seconds} secondi corrispondono a ${h} ore, ${m} minuti e ${s} secondi`);

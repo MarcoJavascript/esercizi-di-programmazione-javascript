@@ -21,3 +21,30 @@
 
   http://www.imparareaprogrammare.it
 */
+var input = 3;
+var one = 'tiramisù';
+var two = 'cheesecake';
+var three = 'panna cotta';
+var four = 'macedonia';
+console.log('MENU:');
+console.log('1.TIRAMISU;');
+console.log('2.CHEESECAKE;');
+console.log('3.PANNA COTTA;');
+console.log('4.MACEDONIA.');
+console.log(`Ha inserito il numero ${input}, quindi`);
+switch (input) {
+  case 1:
+    console.log(`Lei ha scelto il ${one}`);
+    break;
+  case 2:
+  console.log(`Lei ha scelto la ${two}`);
+  break;
+  case 3:
+  console.log(`Lei ha scelto la ${three}`);
+  break;
+  case 4:
+  console.log(`Lei ha scelto la ${four}`);
+  break;
+  default:
+    console.log('Dolce non disponibile');
+}

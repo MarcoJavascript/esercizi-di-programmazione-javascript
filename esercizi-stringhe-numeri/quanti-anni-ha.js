@@ -11,3 +11,8 @@
 
   http://www.imparareaprogrammare.it
 */
+var currentyear = 2020;
+var dateofbirth = 1910;
+var age = currentyear - dateofbirth;
+var yearstohundred = 100 - age;
+console.log(`Età: ${age}; anni mancanti: ${yearstohundred}`);

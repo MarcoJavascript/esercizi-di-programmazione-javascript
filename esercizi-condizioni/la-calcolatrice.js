@@ -28,3 +28,31 @@
 
   http://www.imparareaprogrammare.it
 */
+var a = 9;
+var b = 2;
+var operazione = 'modulo';
+switch (operazione) {
+    case 'somma':
+    console.log(a+b);
+    break;
+    case 'sottrazione':
+    console.log(a-b);
+    break;
+    case 'moltiplicazione':
+    console.log(a*b);
+    break;
+    case 'divisione':
+    console.log(a/b);
+    break;
+    case 'modulo':
+    console.log(Math.round(a) % Math.round(b)); //modulo consentito solo per numeri interi
+    break;
+    case 'media':
+    console.log((a+b)/2);
+    break;
+    case 'potenza':
+    console.log(Math.pow(a,b));
+    break;
+    default:
+    console.log('operazione non consentita');
+}

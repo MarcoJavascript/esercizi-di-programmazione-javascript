@@ -17,3 +17,10 @@
 
   http://www.imparareaprogrammare.it
 */
+var gatti = 5;
+var inFila = 2;
+var file = gatti/inFila;
+file = Math.round(file);
+var mancanti = file*inFila - gatti;
+console.log(file);
+console.log(mancanti);
