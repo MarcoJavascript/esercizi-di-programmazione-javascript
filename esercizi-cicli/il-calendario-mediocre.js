@@ -45,3 +45,17 @@
 
   http://www.imparareaprogrammare.it
 */
+var dim = 30;
+var start = 6; // 0:lunedì, 1:martedì..... 6:domenica
+var days = ['lun', 'mar', 'mer', 'gio', 'ven', 'sab', 'dom'];
+for ( var i = 1; i <= dim; i++){
+  if (dim > 31) {
+    console.log('Ops! Ricorda che i mesi sono costituiti al massimo da 30 giorni!');
+  break;
+}
+  if (start > 6) {
+  start = 0;
+}
+  console.log(days[start] + ' : ' + i);
+  start = start + 1;
+  }
