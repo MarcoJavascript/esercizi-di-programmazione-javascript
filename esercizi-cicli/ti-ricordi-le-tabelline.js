@@ -8,3 +8,11 @@
 
   http://www.imparareaprogrammare.it
 */
+var input = 12;
+var result = [];
+var count = 0;
+for ( var i = 0; i <= 10; i++) {
+  result[count] = input * i;
+  count++;
+  }
+console.log(result.join(' ') + '\n');
