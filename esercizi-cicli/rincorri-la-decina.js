@@ -19,3 +19,13 @@
 
   http://www.imparareaprogrammare.it
 */
+var count = 0;
+var array = [];
+for (i = 0; i < 100; i++) {
+  count += 1;
+  array[i] = count;
+  if ( count % 10 === 0) {
+  array[i] = count + '\n';
+}
+}
+console.log(' ' + array.join(' ') + '\n');
