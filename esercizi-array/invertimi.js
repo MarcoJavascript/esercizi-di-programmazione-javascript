@@ -15,3 +15,14 @@
 
   http://www.imparareaprogrammare.it
 */
+var array = [];
+var input = 7;
+var max = 100;
+var min = 1;
+for ( i = 0; i < input; i++) {
+var r = (Math.random() * (max - min) + min);
+var random = Math.floor(r);
+  array[i] = random;
+}
+console.log(array);
+console.log(array.reverse());
