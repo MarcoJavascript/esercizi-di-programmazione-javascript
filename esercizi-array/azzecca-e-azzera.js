@@ -12,3 +12,21 @@
 
   http://www.imparareaprogrammare.it
 */
+var array2 = [];
+for ( var i = 0; i < 100; i ++) {
+  array2[i] = Math.round(Math.random() * (50-1) + 1);
+  }
+    console.log(array2);
+    do {
+  var numero = prompt('Inserisci un numero');
+  var filtered = array2.filter(function(item){
+    return item % numero !== 0;
+  })
+  }while (filtered.length !== 0);
+  /*
+  Il programma continua a chiedere numeri fino a quando
+  non saranno eliminati dall'array tutti i numeri
+  multipli del numero inserito. Alla fine verrà stampato
+  l'array vuoto
+  */
+ console.log(filtered);
