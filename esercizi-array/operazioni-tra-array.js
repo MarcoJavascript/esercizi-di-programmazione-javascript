@@ -19,3 +19,30 @@
 
   http://www.imparareaprogrammare.it
 */
+var array1 = [];
+var array2 = [];
+var array3 = [];
+var operazione = 'addizione';
+for ( var i = 0; i < 10; i++) {
+  array1[i] = Math.round(Math.random() * (10-1) + 1);
+  array2[i] = Math.round(Math.random() * (10-1) + 1);
+  switch (operazione) {
+    case 'addizione':
+    array3[i] = array1[i] + array2[i];
+    break;
+    case 'sottrazione':
+    array3[i] = array1[i] - array2[i];
+    break;
+    case 'moltiplicazione':
+    array3[i] = array1[i] * array2[i];
+    break;
+    case 'divisione':
+    array3[i] = array1[i] / array2[i];
+    break;
+    default:
+    console.log('Operazione non consentita');
+  }
+}
+console.log(array1);
+console.log(array2);
+console.log(array3);
