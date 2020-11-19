@@ -15,3 +15,32 @@
 
   http://www.imparareaprogrammare.it
 */
+var array = [];
+var min = 0;
+var max = 100;
+for ( var t = 0; t < 10; t++) {
+  array[t] = Math.round(Math.random() * (max-min) + min);
+}
+var array2 = array.slice();
+//decrescente
+for ( var i = 0; i < array.length; i++) {
+  for ( var j = 0; j < array.length - 1; j++) {
+  if (array[j] < array[j+1]) {
+    const appoggio = array[j];
+    array[j] = array[j+1];
+    array[j+1] = appoggio;
+  }
+}
+}
+console.log(array);
+//crescente
+for ( var i = 0; i < array.length; i++) {
+  for ( var j = 0; j < array.length - 1; j++) {
+  if (array2[j] > array2[j+1]) {
+    const appoggio = array2[j];
+    array2[j] = array2[j+1];
+    array2[j+1] = appoggio;
+  }
+}
+}
+console.log(array2);
