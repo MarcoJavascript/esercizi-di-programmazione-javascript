@@ -24,7 +24,7 @@ array[1] = [3,4];
 array[2] = [5,6];
 array[3] = [7,8];
 console.log(array);
-for ( var i = 0; i < 2; i++) {
+for ( var i = 0; i < array[i].length; i++) {
   array1[i] = [];
   for ( var j = 0; j < array.length; j++) {
     array1[i][j] = array[j][i];
