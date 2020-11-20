@@ -21,3 +21,35 @@
 
   http://www.imparareaprogrammare.it
 */
+var n = 2;
+var m = 3;
+var matrix = [];
+var sommar = [];
+var sommac = [];
+for ( var i = 0; i < n; i++) {
+  matrix[i] = [];
+for ( var j = 0; j < m; j++) {
+  matrix[i][j] = Math.round(Math.random() * (100-1) + 1);
+  }
+  }
+console.log(matrix);
+
+
+for ( var i = 0; i < n; i++) {
+  var j = 0;
+  sommar[i] = 0;
+  do {
+    sommar[i] += matrix[i][j];
+    j++;
+  } while ( j < m);
+}
+for ( var i = 0; i < m; i++) {
+  var j = 0;
+  sommac[i] = 0;
+  do {
+    sommac[i] += matrix[j][i];
+    j++
+  } while (j < n);
+}
+console.log(sommar);
+console.log(sommac);
