@@ -17,3 +17,23 @@
 
   http://www.imparareaprogrammare.it
 */
+var riga = 2;
+var colonna = 3;
+var matrix = [];
+var somma = 0;
+for ( var i = 0; i < riga; i++) {
+  matrix[i] = [];
+for ( var j = 0; j < colonna; j++) {
+  matrix[i][j] = Math.round(Math.random() * (100-1) + 1);
+  }
+  }
+  for ( var i = 0; i < riga; i++) {
+  var m = 0;
+do {
+  somma += matrix[i][m]
+  m++
+} while (m < colonna);
+}
+
+console.log(matrix);
+console.log(somma);
