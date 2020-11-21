@@ -20,7 +20,24 @@
   http://www.imparareaprogrammare.it
 */
 var array = [];
-var numeri = [4, 12, 25, 37, 46, 55, 62, 69, 72, 81];
+var numeri = [];
+for ( i = 0; i < 10; i++) {
+  var n = prompt('Inserisci un numero');
+if (n > 90) {
+  n = prompt('Numero troppo grande');
+}
+if (numeri.includes(n)) {
+  n = prompt('Numero già inserito, inseriscine un altro');
+}
+if (n === '') {
+  n = prompt('Attenzione! Non hai inserito nessun numero. Riprova.');
+}
+numeri[i] = n;
+
+}
+numeri.forEach(function int (n, i, numeri){
+  numeri[i] = parseInt(n);
+})
 var max = 90;
 var min = 1;
 var winning = [];
@@ -35,7 +52,6 @@ if (numeri.includes(n)) {
   array.push(n);
 }
 }
-
 console.log('I tuoi numeri sono:' + ' ' + numeri);
 console.log('I numeri estratti sono:' + ' ' + array);
 var w = winning.length;

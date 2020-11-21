@@ -13,6 +13,14 @@
     Input: n = 2, m = 2
     Output: TRUE
 
-    
+
   http://www.imparareaprogrammare.it
 */
+var num1 = 5;
+var num2 = 6;
+function identity (one , two) {
+  if (one === two) {
+  console.log('True');
+}else console.log('False');
+}
+identity(num1, num2);

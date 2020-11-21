@@ -13,3 +13,13 @@
 
   http://www.imparareaprogrammare.it
 */
+var a = -3;
+var b = 6;
+var c = 10;
+function max (first, second, third) {
+  return Math.max(first,second,third);
+}
+function min (first, second, third) {
+  return Math.min(first,second,third);
+}
+console.log(`Il numero più grande è ${max(a,b,c)} e il più piccolo è ${min(a,b,c)}`);
