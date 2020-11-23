@@ -12,3 +12,11 @@
 
   http://www.imparareaprogrammare.it
 */
+var n = 7;
+function fatt (input) {
+  if (input == 0 || input == 1)
+  return 1;
+  else
+  return (input * fatt(input - 1));
+}
+console.log(fatt(n));

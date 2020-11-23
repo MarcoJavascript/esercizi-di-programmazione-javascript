@@ -8,3 +8,12 @@
 
   http://www.imparareaprogrammare.it
 */
+var n = 16;
+var min = 0;
+function casual (input) {
+  return (Math.random() * (input - min) + min);
+}
+function random (input) {
+  return (Math.random() * (input - min) + min);
+}
+console.log(random(casual(n)));

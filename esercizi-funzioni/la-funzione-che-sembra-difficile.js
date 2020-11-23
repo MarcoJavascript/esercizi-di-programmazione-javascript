@@ -7,6 +7,18 @@
     Input : N = 123456, K = 3
     Output: 4
 
-    
+
   http://www.imparareaprogrammare.it
 */
+var n = 123456;
+number = n.toString();
+var k = 4;
+var i = number.length - k;
+function count ( input, index, ver ) {
+  if (ver >= input.length)
+  return 0;
+  else
+ return input[i];
+}
+
+console.log(count(number,i,k));
