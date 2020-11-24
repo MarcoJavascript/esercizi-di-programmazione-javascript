@@ -16,8 +16,8 @@
 */
 var n = 18;
 function timer (input) {
-  for ( var i = n - 1; i >= 0; i--){
-    console.log(i);
+  for ( var i = i; i <= input; i++){
+    console.log(input - i);
   }
 }
 timer(n);
