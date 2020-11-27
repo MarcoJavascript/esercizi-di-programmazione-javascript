@@ -15,3 +15,28 @@
 
   http://www.imparareaprogrammare.it
 */
+/*
+function near (a,b,n) {
+  if (Math.abs(a-n) === Math.abs(b-n))
+  return 0;
+  else if (Math.abs(b-n) < Math.abs(a-n))
+  return 1;
+  else if (Math.abs(b-n) > Math.abs(a-n))
+  return -1;
+}
+console.log(near(3,9,6));
+*/
+var p1 = prompt('Player 1, enter a number');
+var p2 = prompt('Player 2, enter a number');
+var r = Math.round(Math.random() * (100-1) + 1);
+function near (a,b,n) {
+  while (a != n && b !=n) {
+    a = prompt('Player 1, enter a number');
+    b = prompt('Player 2, enter a number');
+  }
+  if (a == n)
+  return 'Player 1 wins';
+  else if (b == n)
+  return 'Player 2 wins';
+}
+console.log(near(p1,p2,r));
